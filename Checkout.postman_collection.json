@@ -1,0 +1,94 @@
+{
+	"info": {
+		"_postman_id": "612074cc-5572-4a19-b711-95d54686d3c1",
+		"name": "Checkout",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST /payment",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"card\": {\n    \"number\": 670300000009991,\n    \"expiryMonth\": 10,\n    \"expiryYear\": 2023,\n    \"cvv\": 233\n  },\n  \"amount\": 111.1093,\n  \"currency\": \"EUR\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/payment",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"payment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET /payment/{id}",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/payment/95a3afa9-100f-4724-9c7d-54b089b308ab",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"payment",
+						"95a3afa9-100f-4724-9c7d-54b089b308ab"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MockBank POST /bankpayment",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"card\": {\n    \"number\": 67030000000000,\n    \"expiryMonth\": 11,\n    \"expiryYear\": 2023,\n    \"cvv\": 235\n  },\n  \"amount\": 12344,\n  \"currrency\": 2\n}"
+				},
+				"url": {
+					"raw": "http://localhost:7201/bankpayment",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7201",
+					"path": [
+						"bankpayment"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
