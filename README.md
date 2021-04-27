@@ -1,6 +1,5 @@
 # Checkout.com .NET Challenge
 ## Building a Payment Gateway
-## By Francois Stiennon - 27/04/2021
 
 ASP .NET Core 5, Fluent Validation, Entity Framework, SQLite, Xunit, Shouldly, Moq.
 
