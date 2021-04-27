@@ -28,7 +28,7 @@ At startup, the Gateway creates a Payments.db sqlite database with a single Paym
 
 # API Documentation
 
-[Swagger documentation](https://localhost:5001/swagger/index.html)
+Once the Gateway is running locally: [Swagger documentation](https://localhost:5001/swagger/index.html) 
 
 [Postman collection](./Checkout.postman_collection.json)
 
